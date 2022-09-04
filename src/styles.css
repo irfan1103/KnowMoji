@@ -2,3 +2,16 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+input {
+  width: 40vw;
+  padding: 1rem 3rem;
+  text-align: center;
+}
+
+.icon-style {
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: rem;
+  margin: 2rem;
+}
