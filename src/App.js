@@ -42,7 +42,7 @@ var emojiKeys = Object.keys(emojiDb);
 console.log(emojiKeys);
 
 export default function App() {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState("???");
   
   var emojiInputHandler = function (event) {
     var userInput = event.target.value;
@@ -62,7 +62,7 @@ export default function App() {
     <div className="App">
       <h1>KnowMoji</h1>
       <input onChange={emojiInputHandler} placeholder="search 🔎" />
-      <h2> Output: {value} </h2>
+      <h2> {value} </h2>
       <h3> Click on the emoji to know the meaning</h3>
       {emojiKeys.map(function (emoji) {
         return (
